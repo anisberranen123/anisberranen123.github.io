@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">   
+    
+    <!----About me-->
+    <div class="col-lg shadow border m-1">   
+    <div class="text-center">
+       <h2>Profil</h2>
+       <img src="../../assets/photo-linkedin.png" alt="profile picture"[width]="256" height="256" class="rounded-circle">
+       <p>Élève dynamique et passionné de quatrième année en Génie Logiciel à l'ÉTS, je recherche un stage en été 
+           2025 pour mettre en pratique mes compétences acquises en génie logiciel et infrastructures et sécurité , ainsi qu'acquérir de l'expérience 
+           dans l'industrie. Expérimenté en création, optimisation et maintien de code, ainsi qu'en administration de systèmes Linux, je suis aussi familier avec les 
+           méthodologies Scrum et Agile. J'ai un intérêt marqué pour le développement Fullstack, le développement mobile ainsi que la CyberSécurité' </p>
+    </div>
+    </div>
+    
+    <!----project-->
+    <div class="col-lg shadow border m-1">   
+    <div class="text-center">
+    <h2>Projet en vedette</h2>
+    <h4>{{featuredProjects.name}}</h4>
+    </div>
+    
+    <carousel>
+       <div *ngFor="let picture of featuredProjects.pictures">
+           <slide><img src={{picture}} alt="" style="display: block;width: 100%;"></slide>
+       </div>
+    </carousel>
+    
+    <p class="mt-2">{{featuredProjects.summary}}</p>
+    <p>Visit the featured section to view more</p>
+    </div>
+    </div>
+    </div>

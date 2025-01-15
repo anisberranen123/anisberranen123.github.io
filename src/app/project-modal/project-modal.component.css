@@ -1,0 +1,42 @@
+/* Styles existants... */
+
+/* Styles pour le modal */
+::ng-deep .modal-content {
+    background: linear-gradient(135deg, #0a192f 0%, #000000 100%);
+    color: #e2e8f0;
+    border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+::ng-deep .modal-header {
+    border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+    color: white;
+}
+
+::ng-deep .modal-body {
+    background: rgba(13, 28, 51, 0.8);
+}
+
+::ng-deep .modal-title {
+    color: white;
+}
+
+::ng-deep .modal-description {
+    color: #e2e8f0;
+}
+
+::ng-deep .search-input {
+    background: rgba(13, 28, 51, 0.8);
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+::ng-deep .close {
+    color: white;
+}
+
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
+    color: #4a90e2;
+}

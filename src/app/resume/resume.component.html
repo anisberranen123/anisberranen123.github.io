@@ -1,0 +1,147 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume!</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                    <div *ngIf="!isWorkExperienceOpen"     style="color:white;">></div>
+                    <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Baccalauréat en Génie Logiciel</h2>
+                    <h3 class="text-primary">École de Technologie Supérieure ÉTS</h3>
+                    <ul>
+                      <li>Graduation en 2026</li>
+                      <li>Plusieurs cours optionnels de cybersécurité</li>
+                      
+                    </ul>
+                  </div>
+    
+    
+                  <div style="text-align: left;">
+                    <h2 class="mb-0">DEC Technique en Infrastructure et Sécurité</h2>
+                    <h3 class="text-primary">Collège Bois-de-Boulogne</h3>
+                    <ul>
+                      <li>Graduation en 2020</li>
+                      
+                      <li>Graduation de Cisco Student Academy </li>
+                    </ul>
+                  </div>
+                  
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Experience de Travail</div>
+                    <div style="width: 10.95px;">
+                    <div *ngIf="!isEducationOpen"     style="color:white;">></div>
+                    <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                </div>
+                </button>
+            
+                  <div style="text-align: left;">
+                    <h2 class="mb-0">Stagiaire Génie Logiciel</h2>
+                    <h3 class="text-primary">OODA Technologies</h3>
+                    <ul>
+                      <li>Développer et optimiser interfaces web en TypeScript avec React et Express.</li>
+                      <li>Acquérir et agréger des données en Python.</li>
+                      <li>Gérer une base de données MongoDB.</li>
+                      <li>Implémenter des fonctionnalités en Java et C Sharp</li>
+                      
+                    </ul>
+                  </div>
+                  <br>
+                  <div style="text-align: left;">
+                    <h2 class="mb-0">Stagiaire Génie Logiciel</h2>
+                    <h3 class="text-primary">Systèmes Linux et Automatisation</h3>
+                    <ul>
+                      <li>Créer des images Linux personnalisées et adaptées à des applications et systèmes  spécifiques.</li>
+                      <li>Créer et gérer des images Docker pour un environnement d'automatisation de build et tests de logiciels.</li>
+                      <li>Rédiger et optimiser des scripts Bash dans le but d'automatiser les builds et déploiements des systèmes.</li>
+                      <li>Utiliser et manipuler des systèmes Linux Debian et Red Hat.</li>
+                      <li>Configurer et gérer des environnements de développement pour l'utilisation d'autres développeurs.</li>
+                    </ul>
+                  </div>
+
+
+                  <div style="text-align: left;">
+                    <h2 class="mb-0">Technicien L1 </h2>
+                    <h3 class="text-primary">Cinesite</h3>
+                    <ul>
+                      <li>Écriture de scripts en PowerShell et en Bash. Configurer et router de l'équipement informatique.</li>
+                      <li>Réparer, mettre à jour, installer et organiser l'infrastructure informatique de l'entreprise.</li>
+                      <li>Mise en œuvre de mises à jour de sécurité et de correctifs logiciels pour protéger les systèmes</li>
+                      <li>Diagnostiquer,réparer,installer et maintenir des équipements physiques ainsi que des logiciels pour des machines telles que des consoles, des ordinateurs, des tablettes et autres.</li>
+                      <li>Service clientèle en méthodologie Agile avec Jira Atlassian.Mise à jour de la documentation Confluence.</li>
+                    </ul>
+                  </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Projets Personnels</div>
+                    <div style="width: 10.95px;">
+                    <div *ngIf="!isCertificationOpen"     style="color:white;">></div>
+                    <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                </div>
+                </button>
+                <div style="text-align: left;">
+                    
+                    
+                    <h3 class="text-primary">Pages Web and et Site de présentation</h3>
+                    <ul>
+                      <li>Conception et développement d'un site web de présentation professionnel en utilisant Angular et Node.js avec HTML et CSS pour la mise en page et le stylisme du site web.</li>
+                      <li>Utilisation de plateformes indépendantes telles que DigitalOcean et WordPress pour l'hébergement de sites web.</li>
+                    </ul>
+                  
+                    <h3 class="text-primary">Réingénierie de logiciel et tests fonctionnels</h3>
+                    <ul>
+                      <li>Réingénierie d'un logiciel appartenant à une compagnie.</li>
+                      <li>Conception et programmation de tests fonctionnels en utilisant JUnit et Uispec4j.</li>
+                      <li>Système de gestion de tickets pour l'allocation de tâches en équipe.</li>
+                    </ul>
+                  
+                    <h3 class="text-primary">Simple Weather App</h3>
+                    <ul>
+                      <li>HTML, CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                  </div>
+    
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px;">
+                    <div *ngIf="!isSkillsOpen"     style="color:white;">></div>
+                    <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                </div>
+                </button>
+                <div style="text-align: left;">
+                  
+                    <ul>
+                        <h3 class="text-primary">Programmation</h3>
+                      <li> Python, Java, C/C++, JavaScript, TypeScript, C Sharp, Angular, HTML, CSS, Node.js</li>
+                      <h3 class="text-primary">IT</h3>
+                      <li> SQL, PowerShell, Bash, Windows Server, VMWare, Cisco, Linux, Docker, Debos, BitBucket, Github</li>
+
+                      <h3 class="text-primary">Methodologies</h3>
+                      <li> Agile, Scrum, Jira, DevOps</li>
+                    </ul>
+                  </div>
+    
+            </accordion-group>
+        </accordion>
+
+    </div>
+    
+</div>
